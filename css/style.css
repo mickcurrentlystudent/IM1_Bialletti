@@ -1,0 +1,184 @@
+@font-face {
+    font-family: Impact;
+}
+
+:root {
+    --color-primary: #7AE1C4;
+    --color-secondary: #black;
+    --color-light: #9ebaca;
+    --global-max-width: 1512px;
+
+}
+
+[data-theme="dark"] {
+    --color-primary: #031658;
+    --color-secondary: #102439;
+    --color-light: #41667e;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: var(--global-max-width);
+    margin: 0 auto;
+    padding: 10px;
+
+    background-color: var(--color-primary);
+}
+
+.header-titel {
+    flex: 1;
+}
+
+.hauptnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hauptnav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hauptnav a {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+.hauptnav a:hover {
+    color: var(--color-light);
+}
+
+.hauptnav img {
+    width: 50px;
+}
+
+.header-button {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.frontpic {
+    background-image: url("/assets/bialetti-frontpage.jpg");
+    height: 900px;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: var(--color-secondary);
+        font-size: 50px;
+    }
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 70px 20px;
+}
+
+.info-article {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.info-article img {
+    width: 265px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-text h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.info-text p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Jeder zweite Baustein wird umgedreht */
+.info-article:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 200px;
+
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.about-text {
+    width: 500px;
+}
+
+.about-text h2 {
+    margin-bottom: 5px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.about-image img {
+    width: 450px;
+    height: 620px;
+    object-fit: cover;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: var(--color-primary);
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+.footer a:hover {
+    color: var(--color-light);
+}
+
+
+
+
+
